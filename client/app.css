@@ -1,0 +1,80 @@
+/* Defining theme variables */
+:root {
+    --background-color: #3a3434;
+    --text-color: #333;
+    --primary-color: #00796b;
+    --secondary-color: #0288d1;
+    --button-hover-color: #01579b;
+    --result-color: #388e3c;
+    --form-background-color: #fcd6d6;
+    --input-background-color: hsl(119, 92%, 51%);
+    --border-color: #cfd8dc;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-box {
+    background-color: var(--form-background-color);
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 400px;
+    border-left: 5px solid var(--primary-color);
+}
+
+.input, .location {
+    background-color: var(--input-background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    border-radius: 5px;
+}
+
+.submit-btn:hover {
+    background-color: var(--button-hover-color);
+}
+
+.result {
+    color: var(--result-color);
+}
+
+.switch-field{
+	background-color: hsl(119, 92%, 51%);
+	width: fit-content;
+	color: #000000;
+	display: flex;
+	padding: 2px;
+}
+.bhkme{
+	padding: 5px;
+}
+/* Dark theme variables */
+.dark-theme {
+    --background-color: #1e1e1e;
+    --text-color: #f0f0f0;
+    --primary-color: #00bfa5;
+    --secondary-color: #00bcd4;
+    --button-hover-color: #008394;
+    --result-color: #76ff03;
+    --form-background-color: #2d2d2d;
+    --input-background-color: hsl(119, 92%, 51%);
+    --border-color: #616161;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
